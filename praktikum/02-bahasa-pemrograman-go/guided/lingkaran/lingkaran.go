@@ -8,7 +8,6 @@ func main() {
 	var luas float64
 
 	fmt.Scan(&r)
-	fmt.Scan(&luas)
 
 	luas = pi * r * r
 

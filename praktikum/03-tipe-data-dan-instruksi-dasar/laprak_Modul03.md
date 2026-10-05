@@ -1,5 +1,5 @@
-# <h1 align="center">Laporan Praktikum Modul [Nomor Modul] - [Judul Modul/Topik]</h1>
-<p align="center">[Nama Praktikan] - [NIM]</p>
+# <h1 align="center">Laporan Praktikum Modul [3] - [Judul Modul/Topik]</h1>
+<p align="center">[Varel Dwi Putra] - [109092600024]</p>
 
 ## Dasar Teori
 
