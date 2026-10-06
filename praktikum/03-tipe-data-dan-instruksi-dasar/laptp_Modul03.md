@@ -20,24 +20,31 @@ func main() {
 }
 
 ##### Output
-![Screenshot Output Unguided]
+![!\[Screenshot Output Unguided\]](tp/sisaKue/output.png)
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Program ini dibuat untuk menghitung berapa banyak kue yang tersisa setelah kue dibagikan secara sama rata kepada setiap anggota keluarga. 
 
 ### 2. Boolean
 
-```go
-[Tempelkan kode program di sini, contoh: kalkulator.go]
-```
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+
+	fmt.Scan(&x)
+
+	fmt.Println(x == 0)
+}
 
 ##### Output
-<!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/renwxyz/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instriksi-dasar/tp/konversi/output.png)
+![03-tipe-data-dan-instruksi-dasar/tp/bool/output.png](tp/bool/output.png)
 
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Program ini dibuat untuk membaca dan mencetak nilai bertipe bool yaitu true dan false. 
 
 ### 3. Konversi
 
@@ -58,12 +65,11 @@ func main() {
 
 
 ##### Output
-<!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/renwxyz/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instriksi-dasar/tp/konversi/output.png)
+![alt text](tp/konversi/output.png)
 
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Program ini dibuat untuk mengonversi mil ke kilometer. Program ini membaca nilai dalam mil yang berupa bilangan desimal dari input pengguna lalu mengonversinya ke kilometer, lalu menampilkan hasilnya. 
 
 ## Kesimpulan
-[Tuliskan kesimpulan yang menjawab tujuan praktikum berdasarkan hasil yang diperoleh.]
+praktikum ini menunjukkan penggunaan operator modulo (%) yang efektif untuk menghitung sisa pembagian bulat pada kasus pembagian kue keluarga, penerapan tipe data bool untuk memproses input dan output nilai logika secara langsung, serta penggunaan tipe data float64 beserta pemformatan fmt.Printf("%.1f") untuk mengolah dan menampilkan hasil konversi mil ke kilometer dengan presisi satu angka di belakang koma.

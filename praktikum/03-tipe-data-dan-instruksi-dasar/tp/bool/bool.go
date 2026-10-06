@@ -3,12 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var x bool
+	var x int
 
 	fmt.Scan(&x)
 
-	isSunny = true
-	isRainning = false
-
-	fmt.Println("apakah hari ini cerah? ", x)
+	fmt.Println(x == 0)
 }

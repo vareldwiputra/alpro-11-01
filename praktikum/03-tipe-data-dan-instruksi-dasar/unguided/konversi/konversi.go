@@ -3,11 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var c int
-
+	var c float64
 	fmt.Scan(&c)
 
-	r := (4 / 5) * c
+	r := (4.0 / 5.0) * c
 
 	fmt.Println(r)
 
