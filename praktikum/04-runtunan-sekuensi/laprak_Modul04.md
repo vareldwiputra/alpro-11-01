@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul [4] - [Runtunan/Sekuensi]</h1>
-<p align="center">[Varel Dwi Putras] - [109092600024]</p>
+<p align="center">[Varel Dwi Putra] - [109092600024]</p>
 
 ## Dasar Teori
 
