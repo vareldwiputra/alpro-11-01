@@ -102,11 +102,17 @@ func main() {
 ![alt text](tp/tracing/output.png)
 
 ​1. Nilai akhir variabel result: 35
+
 ​2. Output program: Nilai akhir result: 35
+
 ​3. Penjelasan Singkat (Tracing):
+
 ​ -Kondisi 1: 10 > 5 (true) dan 5 < 10 (true) \rightarrow result = 10 + 5 = 15.
+
 ​ -Kondisi 2: 15 > 10 \text{ \&\& } 10 == 10 (true) \rightarrow result = 15 + 15 = 30.
+
 ​ -Kondisi 3: 10 == 10 \text{ \vert{}\vert{} } 5 > 10 (true) \rightarrow result = 30 + 5 = 35.
+
 ​ -Kondisi 4: !(10 < 15 && 5 < 10) \rightarrow !(true) = false. Masuk ke else yang berisi result - 10. Karena tidak ada tanda sama dengan (-=), nilainya tidak tersimpan dan result tetap 35.
 
 #### Deskripsi
