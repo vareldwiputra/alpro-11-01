@@ -168,7 +168,7 @@ func main() {
 }
 
 ##### Output
-![alt text](unguided/atm/output.png)
+![alt text](unguided/output/output.png)
 
 #### Deskripsi
  Program yang dibuat untuk simulasi sistem ATM dengan skenario sebagai berikut:
@@ -180,7 +180,7 @@ func main() {
  • Jika password benar, program menampilkan Menu ATM dengan pilihan untuk melihat saldo, menarik uang, atau keluar. Menu terus ditampilkan hingga pengguna memilih keluar. 
 
  • Jika pengguna salah memasukkan password sebanyak 3 kali berturut-turut, program menampilkan pesan bahwa ATM terblokir dan program berakhir.
- 
+
  • Password ATM yang benar adalah "1234". • Inisialisasi saldo awal dengan 10000000
 
 
