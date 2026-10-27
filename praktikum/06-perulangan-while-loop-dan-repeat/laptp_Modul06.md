@@ -1,125 +1,137 @@
-# <h1 align="center">Tugas Pendahuluan Modul [5] - [Perulangan For Loop]</h1>
+# <h1 align="center">Tugas Pendahuluan Modul [6] - [Perulangan While]</h1>
 <p align="center">[Varel Dwi Putra] - [109092600024]</p>
 
-### 1. 
-
-### 2. 
-
-### 3. Ganjil
-package main
-
-import "fmt"
-
-func main() {
-	intNum := 5
-	intOther := 10
-	//var sngNum float64 = -3
-
-	if intNum >= 5 && intOther < 11 {
-		fmt.Println("Beep")
-	}
-
-}
-
-
-##### Output
-![alt text](tp/evaluasi/output.png)
-
-1. false
-intNum > 5
-2. true
-intNum >= 5 && intOther < 11
-3. true
-sngNum != -1 || intOther < 0
-4. true
-!(intNum > 3) || intNum <= 5
-5. false
-!(intOther >= intNum)
-6. false
-0 - sngNum > 0
-7. true
-4 / 2 == intOther / intNum
-8. true
-intOther % 2 == 0
-9. true
-intOther + 2 * intNum != 30 || !(sngNum > 0)
-10. true
-intOther > 0 && intNum > 0 || sngNum > 0
-11. true
-sngNum > 0 || (intNum >= 0 && -1 * intOther == -10)
-12. true
-intNum == 5
-13. true
-intNum > 0 || (sngNum <= 0 && intOther == 13)
-14. true
-!(!(!(!(intNum > 0))))
-
-#### Deskripsi
-Program yang menggunakan perulangan for untuk menampilkan semua bilangan ganjil dari 1 hingga n, kemudian menampilkan jumlah seluruh bilangan ganjil tersebut. 
-
-### 4. Perkalian
+### 1. Lulus
 
 package main
 
 import "fmt"
 
 func main() {
-	x := 10
-	y := 5
-	z := 15
-	result := 0
+    var nilai int
 
-	if x > 5 {
-		if y < 10 {
-			result = x + y
-		} else {
-			result = x - y
-		}
-	}
+    for {
+        fmt.Print("Masukkan nilai Anda: ")
+        fmt.Scan(&nilai)
 
-	if z > 10 && x == 10 {
-		result += z
-	} else {
-		result = z - x
-	}
+        if nilai == -1 {
+            break
+        }
 
-	if x == 10 || y > 10 {
-		result += 5
-	} else if y == 5 && z > 10 {
-		result -= 5
-	} else {
-		result *= 2
-	}
+        if nilai >= 60 {
+            fmt.Println("Anda lulus ujian.")
+        } else {
+            fmt.Println("Anda tidak lulus ujian.")
+        }
+    }
 
-	if !(x < 15 && y < 10) {
-		result += 10
-	} else {
-		_ = result - 10
-	}
-
-	fmt.Println("Nilai akhir result:", result)
+    fmt.Println("Program selesai.")
 }
 
+### output
+![alt text](tp/lulus/output.png)
 
-##### Output
-![alt text](tp/tracing/output.png)
+### Deskripsi
+Program meminta pengguna (siswa) memasukkan nilai ujian mereka secara berulang. Jika nilai yang dimasukkan lebih besar atau sama dengan 60, tampilkan pesan Anda lulus ujian. Jika tidak, tampilkan pesan Anda tidak lulus ujian.
 
-​1. Nilai akhir variabel result: 35
+### 2. Deret
 
-​2. Output program: Nilai akhir result: 35
+package main
 
-​3. Penjelasan Singkat (Tracing):
+import "fmt"
 
-​ -Kondisi 1: 10 > 5 (true) dan 5 < 10 (true) \rightarrow result = 10 + 5 = 15.
+func main() {
+    var n int
+    fmt.Scan(&n)
 
-​ -Kondisi 2: 15 > 10 \text{ \&\& } 10 == 10 (true) \rightarrow result = 15 + 15 = 30.
+    i := 1
+    jumlah := 0
 
-​ -Kondisi 3: 10 == 10 \text{ \vert{}\vert{} } 5 > 10 (true) \rightarrow result = 30 + 5 = 35.
+    for i <= n {
+        jumlah = jumlah + i
+        i++
+    }
 
-​ -Kondisi 4: !(10 < 15 && 5 < 10) \rightarrow !(true) = false. Masuk ke else yang berisi result - 10. Karena tidak ada tanda sama dengan (-=), nilainya tidak tersimpan dan result tetap 35.
+    fmt.Println(jumlah)
+}
 
-#### Deskripsi
- Program yang menggunakan perulangan for untuk menampilkan tabel perkalian dari sebuah bilangan a, mulai dari a × 1 hingga a × b. 
+### output
+![alt text](tp/deret/output.png)
+
+### Deskripsi
+Program ini dibuat untuk menghitung jumlah dari deret bilangan berikut menggunakan perulangan while
+
+### 3. Duaterendah
+
+package main
+
+import "fmt"
+
+func main() {
+    var n int
+    fmt.Scan(&n)
+
+    var nama string
+    var nilai int
+
+    var nama1, nama2 string
+    nilai1 := 1000000
+    nilai2 := 1000000
+
+    i := 1
+    for i <= n {
+        fmt.Scan(&nama, &nilai)
+
+        if nilai < nilai1 {
+            nilai2 = nilai1
+            nama2 = nama1
+
+            nilai1 = nilai
+            nama1 = nama
+        } else if nilai < nilai2 {
+            nilai2 = nilai
+            nama2 = nama
+        }
+
+        i++
+    }
+
+    fmt.Println(nama1)
+    fmt.Println(nama2)
+}
+
+### output
+![alt text](tp/duaterendah/output.png)
+
+### Deskripsi
+Program yang menggunakan perulangan while untuk menemukan dua nilai terendah dari n siswa.
+
+### 4. Biaya
+
+package main
+
+import "fmt"
+
+func main() {
+    var n int
+    fmt.Scan(&n)
+
+    biaya := 10000000.0
+    tahun := 1
+
+    for tahun < n {
+        biaya = biaya * 1.06
+        tahun++
+    }
+
+    fmt.Printf("%.0f\n", biaya)
+}
+
+### output
+![alt text](tp/biaya/output.png)
+
+### Deskripsi
+Program yang dibuat untuk membantu sebuah universitas menghitung perkiraan biaya kuliah setiap tahun sampai tahun ke-n. Biaya kuliah awal pada universitas tersebut adalah Rp 10.000.000 dan setiap tahun bertambah sebesar 6% dari biaya tahun sebelumnya. 
 
 ## Kesimpulan
-Tugas pendahuluan praktikum Algoritma Pemrograman yang berfokus pada pemahaman dan penerapan struktur kontrol keputusan (if-else dan switch-case) serta logika ekspresi boolean dalam bahasa pemrograman Go.
+Berdasarkan tugas pendahuluan Modul 06, perulangan "while" dalam bahasa Go dapat dibuat menggunakan "for" dengan kondisi. Perulangan ini dapat digunakan untuk memeriksa nilai ujian, menghitung jumlah deret bilangan, mencari dua nilai terendah siswa, dan menghitung perkiraan biaya kuliah setiap tahun. Dari soal-soal tersebut, saya memahami bahwa perulangan membantu menjalankan proses secara berulang sampai kondisi yang ditentukan terpenuhi.
